@@ -1,0 +1,20 @@
+/* Start My-FrameWork */
+  /* Container */
+.container {
+  padding-left: var(--padding-la-ri);
+  padding-right: var(--padding-la-ri);
+  padding-top: var(--padding-to-bo);
+  padding-bottom: var(--padding-to-bo);
+}
+  /* Flex >Space-between */
+.flx-be {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  /* Padding-Top And Padding-Bottom */
+.pad {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* End My-FrameWork */

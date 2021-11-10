@@ -1,0 +1,269 @@
+/* Start Variables */
+:root {
+  --blue-Color: #03A9F4;
+  --background-Color: #F6F6F6;
+  --padding-la-ri: 50px;
+  --padding-to-bo: 20px;
+}
+/* End Variables */
+/* Start Global Rules */
+body {
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sane', sans-serif;
+}
+html {
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+.container {
+  padding-left: var(--padding-la-ri);
+  padding-right: var(--padding-la-ri);
+  padding-top: var(--padding-to-bo);
+  padding-bottom: var(--padding-to-bo);
+}
+a {
+  text-decoration: none;
+  color: black;
+  transition: .4s;
+}
+header .container a:hover {
+  color: var(--blue-Color);
+}
+span {
+  color: var(--blue-Color);
+}
+/* End Global Rules */
+/* Start Header */
+header {
+  text-align: center;
+}
+header .container {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+header .container p {
+  font-weight: bold;
+  font-size: 22px;
+}
+header .container .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .container .links ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header .container .links ul li {
+  margin-left: 10px;
+}
+header .container .links ul li a {
+  font-size: 1rem;
+}
+/* End Header */
+/* Start First-thing */
+  /* Start one */
+.first-thing .one{
+  background-color: var(--background-Color);
+  text-align: center;
+}
+.first-thing .one .container p {
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: .5px;
+}
+  /* End one */
+  /* Start Two */
+.first-thing .two .container .srv .card {
+  text-align: center;
+  margin-left: 30px;
+}
+@media (max-width: 800px) {
+  .first-thing .two .container .srv .card {
+    margin-left: 0;
+  }
+}
+.first-thing .two .container .srv .card .img {
+  width: 100px;
+  height: 70px;
+}
+.first-thing .two .container .srv .card h3 {font-size: 1.1rem;}
+.first-thing .two .container .srv .card p {
+  color: #818181;
+  font-weight: 400;
+}
+  /* End Two */
+/* End First-thing */
+/* Start About Us */
+.about {
+  background-color: var(--background-Color);
+}
+.about .container img {
+  width: 500px;
+  height: 300px;
+}
+.about .container .text {
+  margin-left: 30px;
+}
+.about .container .text p {
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+@media (max-width: 800px) {
+  .flx-be {
+    flex-direction: column;
+  }
+  .about .container img {
+    width: 300px;
+    height: 200px;
+  }
+  .about .container .text {
+    margin-left: 0px;
+  }
+}
+/* End About Us */
+/* Start Services */
+  /* Start subjects */
+.services .subjects .container .card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+@media (max-width: 800px) {
+  .services .subjects .container .card {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+}
+.services .subjects .container .card:nth-child(1) {background-color: #B33939;}
+.services .subjects .container .card:nth-child(2) {background-color: #227093;}
+.services .subjects .container .card:nth-child(3) {background-color: #218C74;}
+.services .subjects .container .card span {
+  font-size: 60px;
+  color: #fff;
+}
+.services .subjects .container .card .title {
+  font-size: 18px;
+  color: #fff;
+}
+  /* End subjects */
+  /* Start Skills */
+.services .skills {
+  background-color: var(--background-Color);
+}
+.services .skills .container h2 {
+  text-align: center;
+}
+.services .skills .container .my-skills .skill {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.services .skills .container .my-skills .skill p {
+  font-weight: bold;
+}
+.services .skills .container .my-skills .skill .rate {
+  height: 40px;
+  background-color: #fff;
+  margin-left: 25px;
+  position: relative;
+}
+@media (max-width: 800px) {
+  .services .skills .container .my-skills .skill .rate {
+    width: 60%;
+  }
+}
+@media (min-width: 800px) {
+  .services .skills .container .my-skills .skill .rate {
+    width: 84%;
+  }
+}
+.services .skills .container .my-skills .skill .rate span {
+  position: absolute;
+  height: 100%;
+  background-color: var(--blue-Color);
+}
+.ht,.cs,.js,.ph,.py {
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  width: 0;
+}
+
+.services .skills .container .my-skills .skill .rate .ht {animation-name: ht;}
+@keyframes ht {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+.services .skills .container .my-skills .skill .rate .cs {animation-name: cs;}
+@keyframes cs {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+.services .skills .container .my-skills .skill .rate .js {animation-name: js;}
+@keyframes js {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+.services .skills .container .my-skills .skill .rate .ph {animation-name: ph;}
+@keyframes ph {
+  from {
+    width: 0;
+  }
+  to {
+    width: 65%;
+  }
+}
+.services .skills .container .my-skills .skill .rate .py {animation-name: py;}
+@keyframes py {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+.services .skills .container .my-skills .skill .nembar {
+  color: #FFF;
+  font-weight: bold;
+  z-index: 1;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+  /* End Skills */
+/* End Services */
+/* Start Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  font-family: 'Open Sane', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+/* End Footer */
